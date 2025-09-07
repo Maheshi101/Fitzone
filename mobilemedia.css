@@ -1,0 +1,143 @@
+/* =======================
+   Mobile Responsive Styles
+   ======================= */
+
+/* General mobile adjustments for screens up to 768px wide */
+@media (max-width: 768px) {
+
+    /* Hiding the desktop navigation and showing the mobile one */
+    nav:not(.mobilemediaNav) {
+        display: none;
+    }
+    
+    .mobilemediaNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    /* Burger icon */
+    .burger {
+        display: block;
+        font-size: 2rem;
+        color: #F5D809;
+        cursor: pointer;
+        order: 1; /* Places the burger first on the left */
+    }
+
+    /* Hide the right login button on mobile */
+    nav .right {
+        display: none;
+    }
+
+    /* Navigation links container */
+    nav .middle {
+        display: none; /* Hidden by default */
+        flex-direction: row; /* New: Expands horizontally */
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(54, 53, 55, 0.95);
+        padding: 15px 0;
+        z-index: 9;
+        overflow-x: auto; /* Adds horizontal scrolling if content overflows */
+    }
+
+    /* Styles to show the menu when 'active' class is added by JavaScript */
+    nav .middle.active {
+        display: flex;
+    }
+    
+    /* Individual navigation links */
+    nav .middle a {
+        font-size: 1rem;
+        padding: 10px 15px;
+        white-space: nowrap; /* Prevents links from wrapping to new lines */
+    }
+    
+    /* Order of items inside the mobile nav */
+    .mobilemediaNav .left {
+        order: 2; /* Places the brand name after the burger */
+    }
+
+
+
+
+    
+    /* General site-wide mobile layout adjustments */
+    .hero-text {
+        font-size: 2.5rem;
+        padding: 0 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .containerIMG {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .subHeading {
+        font-size: 2.2rem;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .nameCard {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .planBox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .planCard {
+        width: 90%;
+    }
+
+    .contactUs {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .input-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .send-button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .facility-list{
+      text-align: left;
+      padding-left: 0;
+    }
+}
+
+/* Hide burger on screens larger than 768px */
+@media (min-width: 769px) {
+    .burger {
+        display: none;
+    }
+}

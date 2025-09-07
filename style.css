@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: DM Serif Display;
+  }
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Container with background image */
+  .hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url('./assets/Hero.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Navigation bar */
+  nav {
+    width: 100%;
+    background-color: #36353783;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: #F5D809; /* bright yellow */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  .mobilemediaNav {
+    display: none;
+  }
+  
+  nav .left,
+  nav .right {
+    display: flex;
+    gap: 42px;
+    align-items: center;
+  }
+  
+  nav .left span {
+    font-weight: 100;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #F5D809;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 100;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ffffff;
+  }
+  
+  /* Centered text */
+  .hero-text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F5D809;
+    font-weight: 900;
+    font-size: 5rem;
+    text-align: center;
+    padding: 0 20px;
+    user-select: none;
+    z-index: 1;
+  }
+  
+  /* Make nav links spaced evenly */
+  nav .middle {
+    display: flex;
+    gap: 50px;
+    font-weight: 700;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+    .hero-text {
+      font-size: 3rem;
+    }
+    nav .middle {
+      gap: 20px;
+    }
+  }
+  
+
+
+  /* ABOUT SECTION */
+
+  .about-section,
+  .program-section,
+  .ourContact-section {
+    padding-top: 60px;
+    background-color: black;
+  }
+
+  .headLine {
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .headLine h1 {
+    color: #F5D809;
+    font-size: 3.5rem;
+    font-weight: 100;
+  }
+  .subHeading {
+    color: #F5D809;
+    font-size: 3.5rem;
+    font-weight: 100;
+    padding: 42px;
+  }
+
+  p {
+    color: #B4B4B4;
+    font-size: 1.6rem;
+    
+  }
+
+  p .pSpan {
+    color: #F5D809;
+  }
+
+  .containerIMG {
+    width: 400px;
+  }
+
+  .container {
+    display: flex;
+    padding-left: 42px;
+    padding-right: 42px;
+    gap: 32px;
+  }
+
+
+
+
+
+  .allignR {
+    text-align: right;
+  }
+
+  .facilitiesL {
+    color: #B4B4B4;
+    font-size: 1.2rem;
+    padding-left: 42px;
+    line-break: 24px;
+
+  }
+
+
+
+  .facility-list {
+    list-style: none;
+    padding-left: 128px;
+  }
+  
+  .facility-list li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: #B4B4B4;
+  }
+  
+  .facility-list li::before {
+    content: "✔"; /* checkmark */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #F5D809; 
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  
+  .nameCard {
+    justify-content: center;
+    gap: 76px;
+  }
+
+  .trainerName {
+    color: #B4B4B4;
+    font-size: 1.8rem;
+    font-weight: 100;
+  }
+
+  .trainerTitle {
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+
+  .nameBox {
+    justify-items: center;
+  }
+
+
+  .about-section {
+    padding-bottom:64px;
+  }
+
+  .textCard {
+    margin: 30px;
+  }
+
+  .planTitle {
+    font-size: 2.4rem;
+    color: #F5D809;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  .textCard-mini {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 12px;
+  }
+
+  .priceTag {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .priceTag span {
+    font-size: 1.6rem;
+  }
+
+.textCard li {
+  font-size: 1.4rem;
+  color: #B4B4B4;
+  padding-left: 32px;
+  list-style: none;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.textCard li::before {
+  content: "✔";
+  color: yellow;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.planBox {
+  gap: 20px;
+}
+
+.planCard {
+  background-color: #4f2222;
+  margin: 20px;
+  border-radius: 30px;
+  width: 500px;
+}
+
+.contactTitle {
+  font-size: 1.8rem;
+  font-weight: 100;
+  color: #ffc107;
+}
+
+.contactDetails {
+  font-size: 1rem;
+}
+
+.contactDetails a {
+  color: #B4B4B4;
+  text-decoration: none;
+}
+
+.topLineContact, 
+.midLineContact,
+.bottomLineContact {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 20px;   
+}
+
+.contactDetailsBox {
+  flex: 1;
+  padding: 16px;
+  color: #B4B4B4;   
+  text-align: left;   
+}
+
+.contactLinks {
+  padding: 12px;
+}
+
+.contactUs {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.contactForm {
+  background-color: #444;
+  padding: 30px;
+  color: gold;
+  width: 90%;
+  max-width: 600px;
+}
+
+.form-title {
+  text-align: center;
+  padding-bottom: 12px;
+  font-weight: 100;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    padding-left: 12px;
+}
+
+.input-group.full-width {
+    width: 100%;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 1.2em;
+}
+
+input, textarea {
+    padding: 10px;
+    border: none;
+    background-color: #e0e0e0;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+textarea {
+    resize: vertical;
+}
+
+.button-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.send-button {
+    background-color: #ffc107;
+    color: black;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+footer p {
+  font-size: 1rem;
+  padding: 5px;
+  text-align: center;
+  font-weight: 100;
+  background-color: #ffc107;
+  color: black;
+}

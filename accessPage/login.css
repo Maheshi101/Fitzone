@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: DM Serif Display;
+  }
+  
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* LEFT SIDE with background image */
+.left-side {
+  flex: 1;
+  background: url('../assets/loginSide.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.btn-signup {
+  background-color: #F5D809;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.btn-signup:hover,
+.btn-login:hover {
+    color: #000;
+}
+/* RIGHT SIDE */
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.login-box {
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-box h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.login-box label {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  font-size: 1rem;
+}
+
+.btn-login {
+  width: 100%;
+  background-color: #F5D809;
+  color: white;
+  padding: 14px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.links {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.links a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin: 0 5px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  color: #F5D809;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 750px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    flex: none;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .overlay h1 {
+    font-size: 2rem;
+  }
+
+  .btn-signup {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+}

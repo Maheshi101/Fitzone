@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: DM Serif Display;
+  }
+
+body {
+  background-color: #f0f2f5;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.form-section {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+}
+
+.form-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #F5D809;
+  outline: none;
+  box-shadow: 0 0 5px #332d00;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #F5D809;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-link {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-link a {
+  color: #F5D809;
+  text-decoration: none;
+}
+
+.image-section {
+  flex: 1;
+  background: url('../assets/loginSide.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  padding: 30px;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0000002e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.overlay-text p {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.overlay-text a {
+  background-color: #F5D809;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.overlay-text a:hover,0
+button:hover {
+  color: black;
+}
+
+.links {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.links a {
+  color: #000;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin: 0 5px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  color: #F5D809;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 750px) {
+  .container {
+    flex-direction: column; 
+    height: auto;
+  }
+
+  .form-section {
+    padding: 30px 20px;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .form-section h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .form-group input {
+    font-size: 14px;
+    padding: 12px 14px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .login-link {
+    font-size: 13px;
+  }
+
+  .image-section {
+    padding-top: 400px;
+    height: 300px;
+    background-position: center;
+  }
+
+  .overlay-text p {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    padding: 10 10px;
+  }
+
+  .overlay-text a {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+
+  .links a {
+    font-size: 0.9rem;
+  }
+}
