@@ -5,6 +5,17 @@
 /* General mobile adjustments for screens up to 768px wide */
 @media (max-width: 768px) {
 
+    .nav {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+    .hero-text {
+      font-size: 3rem;
+    }
+    nav .middle {
+      gap: 20px;
+    }
+
     /* Hiding the desktop navigation and showing the mobile one */
     nav:not(.mobilemediaNav) {
         display: none;

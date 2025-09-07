@@ -33,7 +33,7 @@
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
-    color: #F5D809; /* bright yellow */
+    color: #F5D809;
     position: fixed;
     top: 0;
     left: 0;
@@ -93,21 +93,6 @@
     font-weight: 700;
   }
   
-  @media (max-width: 768px) {
-    nav {
-      padding: 10px 20px;
-      font-size: 0.9rem;
-    }
-    .hero-text {
-      font-size: 3rem;
-    }
-    nav .middle {
-      gap: 20px;
-    }
-  }
-  
-
-
   /* ABOUT SECTION */
 
   .about-section,
@@ -187,7 +172,7 @@
   }
   
   .facility-list li::before {
-    content: "✔"; /* checkmark */
+    content: "✔";
     position: absolute;
     left: 0;
     top: 0;
